@@ -51,9 +51,10 @@ nav a{
 
 #paragraph1{
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #242222;
 }
+
 
 @media(min-width: 768px){
     #paragraph1{
