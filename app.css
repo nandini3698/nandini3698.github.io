@@ -16,56 +16,84 @@ body{
 nav{
     width: 100%;
     background: #242222;
-    height: 65px;
+    height: 70px;
 }
 
 .navbar-brand{
-    font-size: 2rem;
+    font-size: 2.3rem;
+    font-weight: 700;
 }
 
 @media(min-width: 992px){
     .navbar-brand{
-        font-size: 2.5rem;
-        padding-left: 80px;
+        font-size: 2.7rem;
+        padding-left: 55px;
     } 
+    li a{
+        color: white;
+        font-weight: 600;
+        font-size:1.3rem;
+    }
+
 }
 
-nav a{
+@media(max-width:992px){
+    li a{
+        color: white;
+        font-weight: 700;
+        font-size:1rem;
+    }
+}
+
+/* nav a{
     color: white;
-}
+    font-weight: 500;
+    font-size:1rem;
+} */
 
+#section0 a:hover{
+    color:rgb(201, 103, 38);
+}
 
 /* Section1 -> Home */
 
-#section1{
-    background: url(https://images.unsplash.com/photo-1589739901509-b71e7e02072c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=661&q=80);
-    background-color: rgb(61, 13, 13);
-    background-size: cover;
-    background-position:center;
-    width: 100%;
-    height: 100vh;
-}
-
-#container1{
-    height: 700px;
-}
-
 
 @media(max-width: 400px){
+    #section1{
+        background: url(images/mobile.jpg);
+        background-color: rgb(61, 13, 13);
+        background-size: cover;
+        background-position:center;
+        width: 100%;
+        height: 100vh;
+    }
     #paragraph1{
-        font-weight: 700;
-        font-size: 1rem;
-        color: #242222;
+        display:none;
     }
 }
 
 @media(min-width: 400px){
+    #section1{
+        background: url(images/desktop.jpg);
+        background-color: rgb(61, 13, 13);
+        background-size: cover;
+        background-position:center;
+        width: 100%;
+        height: 100vh;
+    }
     #paragraph1{
         font-weight: 600;
         font-size: 1.2rem;
         color: #242222;
     }
 }
+
+
+#container1{
+    height: 700px;
+}
+
+
 
 @media(min-width: 768px){
     #paragraph1{
@@ -79,15 +107,11 @@ nav a{
     }
 }
 
-#section0 a:hover{
-    color:rgb(201, 103, 38);
-}
-
 
 /* Section2 -> About */
 
 #section2{
-    background: url(https://images.unsplash.com/photo-1460602594182-8568137446ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);
+    background: url(images/about.jpg);
     background-color: rgb(43, 88, 148);
     background-size: cover;
     background-position:center;
@@ -102,7 +126,7 @@ nav a{
     background-color:rgb(219, 215, 215);
     width: 100%;
     height:100%;
-    margin-top:30px;
+    margin-top:10px;
     margin-right: auto;
     margin-left: auto;
     color:black;
@@ -120,7 +144,7 @@ nav a{
 #about1{
     font-size: 1.4rem;
     margin-bottom:5px;
-    padding-top: 40px;
+    padding-top: 10px;
 }
 
 #about2{
@@ -202,76 +226,522 @@ nav a{
 
 /* Section3 Skills */
 
+
+
 #section3{
-    background-image: url(https://images.unsplash.com/photo-1588159967382-198ec1c10f49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-image: url(images/skills.jpg);
     background-color: rgb(224, 220, 220);
     background-size: cover;
     background-position:center;
     padding-top: 60px;
-    padding-bottom:40px;
-    min-height: 100vh;
+    padding-bottom: 40px;
     width: 100%;
     height: 100%;
 }
 
 
-@media(max-width: 500px){
-    #section3 p{
+@media(max-width: 400px){
+    .paragraph3 p{
         color: rgb(5, 38, 80);
-        font-weight: 500;
-        font-size: 1.9rem;
+        font-weight: 800;
+        font-size: 4rem;
         padding-bottom: 1.9px;
     }
-    #section3 .skill{
-        font-size: 2rem;
-        font-weight: 400;
-        color: black;
+
+    .skillhead{
+        font-size: 1.7rem;
+        text-align: center; 
+        font-weight: 500;      
     }
-    .fab{
-        font-size:xx-large;
-    }
+    
 }
 
-@media(min-width: 500px){
-    #section3 p{
+@media(min-width: 400px){
+    .paragraph3 p{
         color: rgb(5, 38, 80);
-        font-weight: 500;
-        font-size: 4rem;
+        font-weight: 600;
+        font-size: 5rem;
         padding-bottom: 5px;
     }
-    #section3 .skill{
+
+    .skillhead{
+        font-size: 2rem;
+        text-align: center;  
+        font-weight: 600;  
+    }
+
+}
+
+.skills{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media(max-width:500px){
+    #section3 img{
+        height: 90px;
+        width: 80px;
+        margin: 20px;
+    }
+}
+
+@media(min-width:500px){
+    #section3 img{
+        height: 140px;
+        width: 130px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+/* Section3A Education */
+
+#section3A{
+    background-image: url(images/education.jpg);
+    background-color: rgb(46, 86, 138);
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    margin: 0px;
+}
+
+@media(max-width: 400px){
+    #section3A #paragraph3a{
         font-size: 2.5rem;
-        font-weight: 400;
-        color: black;
-    }
-    .fab{
-        font-size:xxx-large;
+        font-weight: 600;
+        color: white;
     }
 }
 
-
-#html5{
-    color: rgb(255, 136, 0);
+@media(min-width: 400px){
+    #section3A #paragraph3a{
+        font-size: 4.2rem;
+        font-weight: 500;
+        color: white;
+    }
 }
 
-#css{
-    color: rgb(3, 46, 95);
+@media(max-width:770px){
+    #first{
+        display:none;
+    }
 }
 
-#bootstrap{
-    color: rgb(70, 5, 70);
+@media(min-width: 770px){
+    #second{
+        display: none;
+    }
 }
 
-#python{
-    color: rgb(219, 200, 23);
+
+@media(max-width: 470px){
+    .edu1{
+        height:260px;
+        width:100%;
+        border: 3px solid red;
+        border-radius: 50%;
+        font-size:1.1rem;
+        color:white;
+        background-color:rgb(241, 160, 38);
+        padding-top: 15px;
+        font-weight: 700;
+    }
+    
+    .eduHead1{
+        text-align: center;
+        font-size:1.7rem;
+        color:rgb(223, 116, 16);
+        font-weight:800;
+        margin-right: 30px;
+    }
+
+    .score1{
+        font-size: 0.8rem;
+        color: rgb(4, 34, 58);
+        font-weight:800;
+    }
+
+    .edu2{
+        height:260px;
+        width:100%;
+        border: 3px solid red;
+        border-radius: 50%;
+        font-size:1.3rem;
+        color:white;
+        padding-top: 30px;
+        background-color:rgb(241, 160, 38);
+        font-weight: 700;
+    }
+    
+    .eduHead2{
+        text-align: center;
+        font-size:1.7rem;
+        color:rgb(223, 116, 16);
+        font-weight:800;
+        margin-right: 30px;
+    }
+
+    .score2{
+        font-size: 1rem;
+        color: rgb(4, 34, 58);
+        font-weight:800;
+    }
+
+    .edu3{
+        height:260px;
+        width:100%;
+        border: 3px solid red;
+        border-radius: 50%;
+        font-size:1.3rem;
+        color:white;
+        background-color:rgb(241, 160, 38);
+        padding-top: 10px;
+        font-weight: 700;
+    }
+    
+    .eduHead3{
+        text-align: center;
+        font-size:1.7rem;
+        color:rgb(223, 116, 16);
+        font-weight:800;
+        margin-right: 30px;
+    }
+
+    .score3{
+        font-size: 1rem;
+        color: rgb(4, 34, 58);
+        font-weight:800;
+    }
+}
+
+
+@media(min-width: 470px){
+    .edu1{
+        height:260px;
+        width:100%;
+        border: 3px solid red;
+        border-radius: 50%;
+        font-size:1.2rem;
+        color:white;
+        background-color:rgb(241, 160, 38);
+        padding-top: 40px;
+        font-weight: 600;
+    }
+    
+    .eduHead1{
+        text-align: center;
+        font-size:1.7rem;
+        color:rgb(223, 116, 16);
+        font-weight:600;
+    }
+
+    .score1{
+        font-size: 1.1rem;
+        color: rgb(4, 34, 58);
+        font-weight:600;
+    }
+
+    .edu2{
+        height:260px;
+        width:100%;
+        border: 3px solid red;
+        border-radius: 50%;
+        font-size:1.5rem;
+        color:white;
+        background-color:rgb(241, 160, 38);
+        padding-top: 40px;
+        font-weight: 600;
+    }
+    
+    .eduHead2{
+        text-align: center;
+        font-size:1.7rem;
+        color:rgb(223, 116, 16);
+        font-weight:600;
+    }
+
+    .score2{
+        font-size: 1rem;
+        color: rgb(4, 34, 58);
+        font-weight:600;
+    }
+
+    .edu3{
+        height:260px;
+        width:100%;
+        border: 3px solid red;
+        border-radius: 50%;
+        font-size:1.5rem;
+        color:white;
+        background-color:rgb(241, 160, 38);
+        padding-top: 40px;
+        font-weight: 600;
+    }
+    
+    .eduHead3{
+        text-align: center;
+        font-size:1.7rem;
+        color:rgb(223, 116, 16);
+        font-weight:500;
+    }
+
+    .score3{
+        font-size: 1rem;
+        color: rgb(4, 34, 58);
+        font-weight:600;
+    }
+}
+
+
+
+@media(min-width: 576px){
+    .edu1{
+        height:260px;
+        width:100%;
+        border: 3px solid red;
+        border-radius: 50%;
+        font-size:1.12rem;
+        color:white;
+        background-color:rgb(241, 160, 38);
+        padding-top: 45px;
+        font-weight: 700;
+    }
+    
+    .eduHead1{
+        text-align: center;
+        font-size:2rem;
+        color:rgb(223, 116, 16);
+        font-weight:700;
+    }
+
+    .score1{
+        font-size: 1rem;
+        color: rgb(4, 34, 58);
+        font-weight:700;
+    }
+
+    .edu2{
+        height:260px;
+        width:100%;
+        border: 3px solid red;
+        border-radius: 50%;
+        font-size:1.34rem;
+        color:white;
+        background-color:rgb(241, 160, 38);
+        padding-top: 30px;
+        font-weight: 700;
+    }
+    
+    .eduHead2{
+        text-align: center;
+        font-size:2rem;
+        color:rgb(223, 116, 16);
+        font-weight:700;
+    }
+
+    .score2{
+        font-size: 1.25rem;
+        color: rgb(4, 34, 58);
+        font-weight:700;
+    }
+
+    .edu3{
+        height:260px;
+        width:100%;
+        border: 3px solid red;
+        border-radius: 50%;
+        font-size:1.4rem;
+        color:white;
+        background-color:rgb(241, 160, 38);
+        padding-top: 35px;
+        font-weight: 700;
+    }
+    
+    .eduHead3{
+        text-align: center;
+        font-size:2rem;
+        color:rgb(223, 116, 16);
+        font-weight:700;
+    }
+
+    .score3{
+        font-size: 1.25rem;
+        color: rgb(4, 34, 58);
+        font-weight:700;
+    }
+}
+
+
+@media(min-width: 770px){
+    .edu1{
+        height:300px;
+        width:100%px;
+        border: 3px solid green;
+        border-radius: 50%;
+        font-size:1.4rem;
+        color:white;
+        background-color:rgb(241, 160, 38);
+        padding-top:50px;
+        font-weight: 600;
+    }
+    
+    .eduHead1{
+        font-size:2.5rem;
+        color:rgb(223, 116, 16);
+        font-weight:600;
+    }
+
+    .score1{
+        font-size: 1.3rem;
+        color: rgb(4, 34, 58);
+        font-weight: 600;
+    }
+
+    .edu2{
+        height:300px;
+        width:100%;
+        border: 3px solid green;
+        border-radius: 50%;
+        font-size:1.6rem;
+        color:white;
+        background-color:rgb(241, 160, 38);
+        padding-top:40px;
+        font-weight: 600;
+    }
+    
+    .eduHead2{
+        font-size:2rem;
+        color:rgb(223, 116, 16);
+        font-weight:700;
+    }
+
+    .score2{
+        font-size: 1.4rem;
+        color: rgb(4, 34, 58);
+        font-weight: 600;
+    }
+
+    .edu3{
+        height:300px;
+        width:300px;
+        border: 3px solid green;
+        border-radius: 50%;
+        font-size:1.6rem;
+        color:white;
+        background-color:rgb(241, 160, 38);
+        padding-top:40px;
+        font-weight: 600;
+    }
+    
+    .eduHead3{
+        font-size:2.5rem;
+        color:rgb(241, 160, 38);
+        font-weight:600;
+    }
+
+    .score3{
+        font-size: 1.4rem;
+        color: rgb(4, 34, 58);
+        font-weight: 600;
+    }
+}
+
+
+@media(min-width: 1200px){
+    .edu1{
+        height:280px;
+        width:auto;
+        border: 3px solid green;
+        border-radius: 50%;
+        font-size:1.7rem;
+        color:white;
+        background-color:rgb(241, 160, 38);
+        padding-top:40px;
+        font-weight: 600;
+    }
+    
+    .eduHead1{
+        font-size:2.5rem;
+        color:rgb(223, 116, 16);
+        font-weight:600;
+    }
+
+    .score1{
+        font-size: 1.4rem;
+        color: rgb(4, 34, 58);
+        font-weight:600;
+    }
+
+    .edu2{
+        height:280px;
+        width:auto;
+        border: 3px solid green;
+        border-radius: 50%;
+        font-size:1.7rem;
+        color:white;
+        background-color:rgb(241, 160, 38);
+        padding-top:40px;
+        font-weight: 600;
+    }
+    
+    .eduHead2{
+        font-size:2.5rem;
+        color:rgb(223, 116, 16);
+        font-weight:600;
+    }
+
+    .score2{
+        font-size: 1.5rem;
+        color: rgb(4, 34, 58);
+        font-weight:600;
+    }
+
+    .edu3{
+        height:280px;
+        width:auto;
+        border: 3px solid green;
+        border-radius: 50%;
+        font-size:1.7rem;
+        color:white;
+        background-color:rgb(241, 160, 38);
+        padding-top:40px;
+        font-weight: 600;
+    }
+    
+    .eduHead3{
+        font-size:2.5rem;
+        color:rgb(223, 116, 16);
+        font-weight:600;
+    }
+
+    .score3{
+        font-size: 1.5rem;
+        color: rgb(4, 34, 58);
+        font-weight:600;
+    }
+}
+
+.education2{
+    margin: 50px;
 }
 
 
 /* Section4 -> Projects */
 
 #section4{
-    /* background-image: url(https://images.unsplash.com/photo-1573495187894-e0e90cdff368?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60); */
-    background-color: rgb(46, 86, 138);
+    background-color: rgb(218, 224, 233);
     padding-top: 60px;
     padding-bottom:40px;
     width: 100%;
@@ -282,15 +752,15 @@ nav a{
 
 @media(max-width: 400px){
     #section4 #paragraph4{
-        color: rgb(221, 214, 214);
-        font-size:3rem;
-        font-weight: 500;
+        color: rgb(7, 20, 78);
+        font-size:2.8rem;
+        font-weight: 700;
     }
 }
 
 @media(min-width: 400px){
     #section4 #paragraph4{
-        color: rgb(221, 214, 214);
+        color: rgb(7, 20, 78);
         font-size:5rem;
         font-weight: 500;
     }
@@ -308,31 +778,34 @@ nav a{
 /* Section5 -> Contact */
 
 #section5{
-    background-image: url(https://images.unsplash.com/photo-1588159967382-198ec1c10f49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-image: url(https://images.unsplash.com/photo-1578070181910-f1e514afdd08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
     background-color: rgb(224, 220, 220);
     background-size: cover;
     background-position:center;
     width: 100%;
     height: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
 
 #section5 #paragraph5{
     font-size:3rem;
-    font-weight: 400;
-    color: rgb(5, 38, 80); 
+    font-weight: 500;
+    color: white; 
     padding-bottom: 50px;  
 }
 
 #section5 #i1{
     color: black;
+    font-size: 60px;
 }
 
 #section5 #i2{
     color: blue;
+    font-size: 60px;
 }
 
 #section5 #i3{
     color: rgb(0, 162, 255);
+    font-size: 60px;
 }
