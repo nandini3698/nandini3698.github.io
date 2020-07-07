@@ -355,7 +355,7 @@ nav{
         font-size:1.1rem;
         color:white;
         background-color:rgb(241, 160, 38);
-        padding-top: 15px;
+        padding-top: 20px;
         font-weight: 700;
     }
     
@@ -380,7 +380,7 @@ nav{
         border-radius: 50%;
         font-size:1.3rem;
         color:white;
-        padding-top: 30px;
+        padding-top: 5px;
         background-color:rgb(241, 160, 38);
         font-weight: 700;
     }
