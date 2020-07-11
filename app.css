@@ -352,23 +352,23 @@ nav{
         width:100%;
         border: 3px solid red;
         border-radius: 50%;
-        font-size:1.1rem;
+        font-size:1.25rem;
         color:white;
         background-color:rgb(241, 160, 38);
-        padding-top: 20px;
+        padding-top: 15px;
         font-weight: 700;
     }
     
     .eduHead1{
         text-align: center;
-        font-size:1.7rem;
+        font-size:1.8rem;
         color:rgb(223, 116, 16);
-        font-weight:800;
-        margin-right: 30px;
+        font-weight:800; 
+
     }
 
     .score1{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         color: rgb(4, 34, 58);
         font-weight:800;
     }
@@ -380,7 +380,7 @@ nav{
         border-radius: 50%;
         font-size:1.3rem;
         color:white;
-        padding-top: 5px;
+        padding-top: 20px;
         background-color:rgb(241, 160, 38);
         font-weight: 700;
     }
@@ -390,11 +390,11 @@ nav{
         font-size:1.7rem;
         color:rgb(223, 116, 16);
         font-weight:800;
-        margin-right: 30px;
+
     }
 
     .score2{
-        font-size: 1rem;
+        font-size: 1.1rem;
         color: rgb(4, 34, 58);
         font-weight:800;
     }
@@ -407,20 +407,20 @@ nav{
         font-size:1.3rem;
         color:white;
         background-color:rgb(241, 160, 38);
-        padding-top: 10px;
+        padding-top: 30px;
         font-weight: 700;
     }
     
     .eduHead3{
         text-align: center;
-        font-size:1.7rem;
+        font-size:1.8rem;
         color:rgb(223, 116, 16);
         font-weight:800;
-        margin-right: 30px;
+
     }
 
     .score3{
-        font-size: 1rem;
+        font-size: 1.1rem;
         color: rgb(4, 34, 58);
         font-weight:800;
     }
@@ -431,7 +431,7 @@ nav{
     .edu1{
         height:260px;
         width:100%;
-        border: 3px solid red;
+        border: 3px solid green;
         border-radius: 50%;
         font-size:1.2rem;
         color:white;
@@ -456,7 +456,7 @@ nav{
     .edu2{
         height:260px;
         width:100%;
-        border: 3px solid red;
+        border: 3px solid green;
         border-radius: 50%;
         font-size:1.5rem;
         color:white;
@@ -481,7 +481,7 @@ nav{
     .edu3{
         height:260px;
         width:100%;
-        border: 3px solid red;
+        border: 3px solid green;
         border-radius: 50%;
         font-size:1.5rem;
         color:white;
